@@ -8,20 +8,25 @@
 /* Generics */
 body {
     font-family: "Open Sans", sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
 }
 
-.container {
+.main-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-ul {
-    list-style-type: none;
-}
 
-a {
-    text-decoration: none;
-}
+
+
 
 img {
     max-width: 100%;

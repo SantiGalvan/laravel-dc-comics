@@ -9,7 +9,7 @@
     height: 100px;
     background-color: #0282f9;
 
-    .card {
+    .comic-card {
         height: 300px;
         width: 180px;
         position: relative;
@@ -39,6 +39,7 @@
             left: 0;
             right: 0;
             text-align: center;
+            margin-bottom: 0;
         }
 
         span {
@@ -78,8 +79,9 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
 
-    h4 {
+    h6 {
         color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 0;
 
         span {
             color: white;

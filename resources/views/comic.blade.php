@@ -14,7 +14,7 @@
 {{-- Section View --}}
 <section id="section-view">
     <div class="comic-container">
-        <div class="card">
+        <div class="comic-card">
             <img src="{{$comic['thumb']}}" alt="">
             <h4>View Gallery</h4>
             <span>Comic book</span>
@@ -30,10 +30,10 @@
                 <div class="comic-price">
                     <div class="price">
                         <div class="price-info">
-                            <h4>U.S. Price: <span>{{$comic['price']}}</span></h4>
+                            <h6>U.S. Price: <span>{{$comic['price']}}</span></h6>
                         </div>
                         <div class="price-text">
-                            <h4>Available</h4>
+                            <h6>Available</h6>
                         </div>
                     </div>
                     <div class="check">

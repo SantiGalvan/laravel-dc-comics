@@ -9,14 +9,14 @@
 
         {{-- Section Content --}}
         <section id="section-content">
-            <div class="container container-card">
+            <div class="main-container container-card">
                 @foreach ($comics as $index => $comic)
                 <div class="dc-card">
                     <a href="{{route('comic', $index)}}">
                         <figure>
                             <img src="{{$comic['thumb']}}" alt="">
                         </figure>
-                        <h3>{{$comic['title']}}</h3>
+                        <h5>{{$comic['title']}}</h5>
                     </a>
                 </div>
                 @endforeach
@@ -25,36 +25,36 @@
 
         {{-- Section Links --}}
         <section id="section-links">
-            <div class="container links-content">
+            <div class="main-container links-content">
                 <div class="links-col">
                     <a href="#">
                         <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="Digital comics">
                     </a>
-                    <h4>Digital comics</h4>
+                    <h5>Digital comics</h5>
                 </div>
                 <div class="links-col">
                     <a href="#">
                         <img src="{{Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="Dc merchandise">
                     </a>
-                    <h4>Dc merchandise</h4>
+                    <h5>Dc merchandise</h5>
                 </div>
                 <div class="links-col">
                     <a href="#">
                         <img src="{{Vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="Subscriptions">
                     </a>
-                    <h4>Subscriptions</h4>
+                    <h5>Subscriptions</h5>
                 </div>
                 <div class="links-col">
                     <a href="#">
                         <img class="img-small" src="{{Vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="Comic shop locator">
                     </a>
-                    <h4>Comic shop locator</h4>
+                    <h5>Comic shop locator</h5>
                 </div>
                 <div class="links-col">
                     <a href="#">
                         <img src="{{Vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="Dc power visa">
                     </a>
-                    <h4>Dc power visa</h4>
+                    <h5>Dc power visa</h5>
                 </div>
             </div>
         </section>

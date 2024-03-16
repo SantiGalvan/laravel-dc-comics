@@ -1,9 +1,9 @@
 <footer>
     <div class="upper-footer">
-        <div class="container footer-container">
+        <div class="main-container footer-container">
             <nav>
-                <div class="col">
-                    <h4>Dc comics</h4>
+                <div class="footer-col">
+                    <h5>Dc comics</h5>
                     <ul>
                         <li><a href="#">Characters</a></li>
                         <li><a href="#">Comics</a></li>
@@ -12,14 +12,14 @@
                         <li><a href="#">Games</a></li>
                         <li><a href="#">News</a></li>
                     </ul>
-                    <h4>Shop</h4>
+                    <h5>Shop</h5>
                     <ul>
                         <li><a href="#">Shop DC</a></li>
                         <li><a href="#">Shop DC Collectibles</a></li>
                     </ul>
                 </div>
                 <div class="col">
-                    <h4>Dc</h4>
+                    <h5>Dc</h5>
                     <ul>
                         <li><a href="#">Therms of use</a></li>
                         <li><a href="#">Privacy policy</a></li>
@@ -34,8 +34,8 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h4>Dc comics</h4>
+                <div class="footer-col">
+                    <h5>Dc comics</h5>
                     <ul>
                         <li><a href="#">Characters</a></li>
                         <li><a href="#">Comics</a></li>
@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="bottom-footer">
-        <div class="container footer-container">
+        <div class="main-container footer-container">
             <div class="actions">
                 <button>Sign-up now!</button>
             </div>
