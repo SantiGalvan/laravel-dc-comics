@@ -1,0 +1,201 @@
+.comic-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#section-view {
+    height: 100px;
+    background-color: #0282f9;
+
+    .card {
+        height: 300px;
+        width: 180px;
+        position: relative;
+        left: 0;
+        bottom: 230px;
+        border: 1px solid white;
+
+        img {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        h4,
+        span {
+            text-transform: uppercase;
+            background-color: #49a8db;
+            color: white;
+            padding: 3px 5px;
+            font-weight: normal;
+            position: absolute;
+            font-size: 0.75rem;
+        }
+
+        h4 {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        span {
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+#section-comic {
+    padding: 60px 0;
+}
+
+.comic-info {
+    flex-basis: 65%;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #003f51;
+    }
+
+    p {
+        line-height: 1.4;
+        color: rgba(0, 0, 0, 0.64);
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+}
+
+.comic-price {
+    background-color: #55ba59;
+    margin-bottom: 20px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+
+    h4 {
+        color: rgba(255, 255, 255, 0.5);
+
+        span {
+            color: white;
+        }
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        border-right: 1px solid black;
+        flex-basis: 70%;
+
+        h4 {
+            color: rgba(255, 255, 255, 0.5);
+
+            span {
+                color: white;
+            }
+        }
+
+        .price-text {
+            h4 {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .check {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+
+        p {
+            margin: 0;
+            color: white;
+        }
+
+        i {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translateY(-15%);
+        }
+    }
+}
+
+
+
+.comic-gallery {
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.64);
+
+    h4 {
+        margin-bottom: 5px;
+    }
+}
+
+#section-info {
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    border-top: 1px solid rgba(0, 0, 0, 0.112);
+
+    .comic-container {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+
+        .talent {
+            flex-basis: 50%;
+
+        }
+
+        .specs {
+            flex-basis: 50%;
+
+            .series {
+                .text {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .talent,
+        .specs {
+
+            div {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.112);
+                padding: 10px 0;
+                display: flex;
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+
+            h4 {
+                color: #003f51;
+                font-size: 1.2rem;
+            }
+
+            .text {
+                flex-basis: 60%;
+                color: #00b5e5;
+
+                &.black {
+                    color: black;
+                }
+            }
+
+            .name-title {
+                flex-basis: 40%;
+                color: #003f51;
+            }
+        }
+    }
+}
