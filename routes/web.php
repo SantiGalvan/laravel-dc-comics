@@ -15,15 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 // Route Home
 Route::get('/', function () {
-    $comics = config('comics');
-    return view('home', compact('comics'));
+    return view('home');
 })->name('home');
+
+// Route Comics
+Route::get('/comics', function () {
+    $comics = config('comics');
+    return view('comics.index', compact('comics'));
+})->name('comics.index');
 
 // Route Comic
 Route::get('/comics/{index}', function ($index) {
     $comics = config('comics');
-    return view('comic', ['comic' => $comics[$index]]);
-})->name('comic');
+    return view('comics.show', ['comic' => $comics[$index]]);
+})->name('comics.show');
 
 // Route Characters
 Route::get('/characters', function () {
