@@ -26,11 +26,11 @@
 <section id="section-comic">
         <div class="comic-container">
             <div class="comic-info">
-                <h1>{{$comic['title']}}</h1>
+                <h1>{{$comic->title}}</h1>
                 <div class="comic-price">
                     <div class="price">
                         <div class="price-info">
-                            <h6>U.S. Price: <span>{{$comic['price']}}</span></h6>
+                            <h6>U.S. Price: <span>{{$comic->price}}</span></h6>
                         </div>
                         <div class="price-text">
                             <h6>Available</h6>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="comic-description">
-                    <p>{{$comic['description']}}</p>
+                    <p>{{$comic->description}}</p>
                 </div>
             </div>
             <div class="comic-gallery">
@@ -61,17 +61,13 @@
             <div class="authors">
                 <p class="name-title">Art By:</p>
                 <p class="text">
-                    @foreach ($comic['artists'] as $index => $artist)
-                        <span>{{$artist}}@if($index < count($comic['artists']) - 1), @else. @endif</span>
-                    @endforeach
+                    {{$comic->artists}}
                 </p>
             </div>
             <div class="writers">
                 <p class="name-title">Written By:</p>
                 <p class="text">
-                    @foreach ($comic['writers'] as $index => $writer)
-                        <span>{{$writer}}@if($index < count($comic['writers']) - 1), @else. @endif</span>
-                    @endforeach
+                    {{$comic->writers}}
                 </p>
             </div>
         </div>
@@ -81,15 +77,15 @@
             </div>
             <div class="series">
                 <p class="name-title">Series:</p>
-                <p class="text">{{$comic['series']}}</p>
+                <p class="text">{{$comic->series}}</p>
             </div>
             <div class="specs-price">
                 <p class="name-title">U.S. Price:</p>
-                <p class="text black">{{$comic['price']}}</p>
+                <p class="text black">{{$comic->price}}</p>
             </div>
             <div class="specs-date">
                 <p class="name-title">On Sale Date:</p>
-                <p class="text black">{{$comic['sale_date']}}</p>
+                <p class="text black">{{$comic->sale_date}}</p>
             </div>
         </div>
     </div>
