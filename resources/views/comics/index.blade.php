@@ -14,9 +14,9 @@
                 <div class="dc-card">
                     <a href="{{route('comics.show', $index)}}">
                         <figure>
-                            <img src="{{$comic['thumb']}}" alt="">
+                            <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
                         </figure>
-                        <h5>{{$comic['title']}}</h5>
+                        <h5>{{$comic->title}}</h5>
                     </a>
                 </div>
                 @endforeach
