@@ -12,7 +12,7 @@
             <div class="main-container container-card">
                 @foreach ($comics as $index => $comic)
                 <div class="dc-card">
-                    <a href="{{route('comics.show', $index)}}">
+                    <a href="{{route('comics.show', $comic->id)}}">
                         <figure>
                             <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
                         </figure>
