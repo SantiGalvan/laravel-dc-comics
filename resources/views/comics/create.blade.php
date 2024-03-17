@@ -53,7 +53,7 @@
                         <div class="col-6">
                             <div class="mb-3">
                                 <label for="artists" class="form-label">Artisti</label>
-                                <input type="email" class="form-control" id="artists" name="artists">
+                                <input type="text" class="form-control" id="artists" name="artists">
                             </div>
                         </div>
                         <div class="col-6">
