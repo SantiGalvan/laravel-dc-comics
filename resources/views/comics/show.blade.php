@@ -19,6 +19,10 @@
             <h4>View Gallery</h4>
             <span>Comic book</span>
         </div>
+        <div class="button">
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-secondary">Modifica</a>
+            <a href="{{route('comics.index')}}" class="btn btn-warning">Torna alla lista</a>
+        </div>
     </div>
 </section>
 
@@ -48,7 +52,7 @@
                 <h4>Advertisement</h4>
                 <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="ADV">
             </div>
-    </div>
+        </div>
 </section>
 
 {{-- Section Info --}}

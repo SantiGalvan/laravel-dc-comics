@@ -9,6 +9,13 @@
     height: 100px;
     background-color: #0282f9;
 
+    .button {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     .comic-card {
         height: 300px;
         width: 180px;
