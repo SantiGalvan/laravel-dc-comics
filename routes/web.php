@@ -25,6 +25,8 @@ Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 Route::get('comics/create', [ComicController::class, 'create'])->name('comics.create');
 // Route Comic
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
+// Rotta per il salvataggio
+Route::post('/comics', [ComicController::class, 'store'])->name('teams.store');
 
 // Route Characters
 Route::get('/characters', function () {
