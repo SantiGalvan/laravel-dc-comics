@@ -23,6 +23,8 @@ Route::get('/', function () {
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 // Route per la creazione
 Route::get('comics/create', [ComicController::class, 'create'])->name('comics.create');
+// Route per la modifica
+Route::get('comics/edit', [ComicController::class, 'edit'])->name('comics.edit');
 // Route Comic
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 // Rotta per il salvataggio
