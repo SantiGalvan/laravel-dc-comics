@@ -20,6 +20,9 @@
                     </a>
                 </div>
                 @endforeach
+                <div class="d-flex justify-content-center w-100">
+                    <a href="{{route('comics.create')}}" class="btn btn-primary">Aggiungi nuovo Comic</a>
+                </div>
             </div>
         </section>
 
