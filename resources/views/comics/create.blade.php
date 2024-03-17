@@ -11,7 +11,8 @@
                 <a href="{{route('comics.index')}}" class="btn btn-secondary">Torna alla lista</a>
             </div>
             <div class="form mt-5">
-                <form action="" method="POST">
+                <form action="{{route('comics.store')}}" method="POST">
+                    @csrf
                     <div class="row">
                         <div class="col-5">
                             <div class="mb-3">
@@ -63,7 +64,7 @@
                         </div>
                         <div class="offset-2 col-8">
                             <div class="mb-3">
-                                <label for="description" class="form-label">Example textarea</label>
+                                <label for="description" class="form-label">Descrizione</label>
                                 <textarea class="form-control" id="description" name="description" rows="5"></textarea>
                             </div>
                         </div>
