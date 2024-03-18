@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreComicRequest;
+use App\Http\Requests\UpdateComicRequest;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
@@ -28,23 +30,10 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreComicRequest $request)
     {
-        $request->validate([
-            'title' => 'required|string',
-            'description' => 'nullable|string',
-            'thumb' => 'url:http,https',
-            'price' => 'required|numeric|min:1',
-            'series' => 'nullable|string',
-            'sale_date' => 'string',
-            'type' => 'nullable|string',
-            'artists' => 'string',
-            'writers' => 'string'
-        ]);
 
-
-
-        $data = $request->all();
+        $data = $request->validated();
 
         $comic = new Comic();
 
@@ -74,21 +63,10 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Comic $comic)
+    public function update(UpdateComicRequest $request, Comic $comic)
     {
-        $request->validate([
-            'title' => 'required|string',
-            'description' => 'nullable|string',
-            'thumb' => 'url:http,https',
-            'price' => 'required|numeric|min:1',
-            'series' => 'nullable|string',
-            'sale_date' => 'string',
-            'type' => 'nullable|string',
-            'artists' => 'string',
-            'writers' => 'string'
-        ]);
 
-        $data = $request->all();
+        $data = $request->validated();
 
         $comic->fill($data);
 
