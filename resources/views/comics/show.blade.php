@@ -22,7 +22,7 @@
         <div class="button">
             <a href="{{route('comics.index')}}" class="btn btn-secondary">Torna alla lista</a>
             <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
-            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST" id="delete-form">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Elimina</button>
@@ -101,4 +101,18 @@
 
 </section>
 
+@endsection
+
+@section('scripts')
+    <script>
+        const deleteForm = document.getElementById('delete-form');
+
+        deleteForm.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const confirmation = confirm('Vuoi eliminare {{$comic->title}}?');
+
+            if(confirmation) deleteForm.submit();
+        })
+    </script>
 @endsection
