@@ -84,4 +84,10 @@ class ComicController extends Controller
 
         return to_route('comics.index')->with('message', "$comic->title eliminato con successo");
     }
+
+    public function trash()
+    {
+        $comics = Comic::onlyTrashed()->get();
+        return view('comics.trash', compact('comics'));
+    }
 }
