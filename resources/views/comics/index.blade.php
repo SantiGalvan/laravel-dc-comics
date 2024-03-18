@@ -9,11 +9,11 @@
         {{-- Section alert --}}
         <section id="section-alert">
             <div class="main-container py-2">
-                @if(session('message'))
+                @session('message')
                 <div class="alert alert-success mb-0">
                     {{session('message')}}
                 </div>
-                @endif
+                @endsession
             </div>
         </section>
 
