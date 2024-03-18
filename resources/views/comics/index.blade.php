@@ -10,6 +10,9 @@
         {{-- Section Content --}}
         <section id="section-content">
             <div class="main-container container-card">
+                <div class="d-flex justify-content-center w-100 mb-4">
+                    <a href="{{route('comics.create')}}" class="btn btn-primary">Aggiungi nuovo Comic</a>
+                </div>
                 @foreach ($comics as $index => $comic)
                 <div class="dc-card">
                     <a href="{{route('comics.show', $comic->id)}}">
@@ -20,9 +23,6 @@
                     </a>
                 </div>
                 @endforeach
-                <div class="d-flex justify-content-center w-100">
-                    <a href="{{route('comics.create')}}" class="btn btn-primary">Aggiungi nuovo Comic</a>
-                </div>
             </div>
         </section>
 
