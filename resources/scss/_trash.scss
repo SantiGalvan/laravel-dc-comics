@@ -1,0 +1,11 @@
+.trash-form {
+    display: none;
+}
+
+.dc-card {
+    &:hover .trash-form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}

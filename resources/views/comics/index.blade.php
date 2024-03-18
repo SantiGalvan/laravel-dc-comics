@@ -21,8 +21,9 @@
         {{-- Section Content --}}
         <section id="section-content">
             <div class="main-container container-card">
-                <div class="d-flex justify-content-center w-100 mb-4">
+                <div class="d-flex justify-content-center w-100 mb-4 gap-3">
                     <a href="{{route('comics.create')}}" class="btn btn-primary">Aggiungi nuovo Comic</a>
+                    <a href="{{route('comics.trash')}}" class="btn btn-secondary">Cestino</a>
                 </div>
 
                 @foreach ($comics as $index => $comic)
