@@ -20,8 +20,13 @@
             <span>Comic book</span>
         </div>
         <div class="button">
-            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
             <a href="{{route('comics.index')}}" class="btn btn-secondary">Torna alla lista</a>
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Elimina</button>
+            </form>
         </div>
     </div>
 </section>
