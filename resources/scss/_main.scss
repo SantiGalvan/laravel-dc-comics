@@ -3,6 +3,10 @@
     background-image: url(../img/jumbotron.jpg);
 }
 
+#section-alert {
+    background-color: black;
+}
+
 #section-content {
     background-color: black;
     text-align: center;
@@ -12,7 +16,7 @@
 .container-card {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
+    padding-top: 20px;
 
     .dc-card {
         flex-basis: calc(100% / 6);

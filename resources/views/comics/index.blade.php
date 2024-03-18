@@ -6,6 +6,17 @@
 @section('main-content')
 
 
+        {{-- Section alert --}}
+        <section id="section-alert">
+            <div class="main-container py-2">
+                @if(session('message'))
+                <div class="alert alert-success mb-0">
+                    {{session('message')}}
+                </div>
+                @endif
+            </div>
+        </section>
+
 
         {{-- Section Content --}}
         <section id="section-content">
@@ -13,6 +24,7 @@
                 <div class="d-flex justify-content-center w-100 mb-4">
                     <a href="{{route('comics.create')}}" class="btn btn-primary">Aggiungi nuovo Comic</a>
                 </div>
+
                 @foreach ($comics as $index => $comic)
                 <div class="dc-card">
                     <a href="{{route('comics.show', $comic->id)}}">
