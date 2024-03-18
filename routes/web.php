@@ -34,6 +34,9 @@ Route::put('comics/{comic}', [ComicController::class, 'update'])->name('comics.u
 // Rotta per il salvataggio
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
+// Rotta per la cancellazione 
+Route::delete('/comics/{comic}', [ComicController::class, 'destroy'])->name('comics.destroy');
+
 // Route Characters
 Route::get('/characters', function () {
     return view('characters');
