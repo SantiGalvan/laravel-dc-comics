@@ -11,7 +11,7 @@
             <div class="main-container py-2">
                 @session('message')
                 <div class="alert alert-success mb-0">
-                    {{session('message')}}
+                    {{$value}}
                 </div>
                 @endsession
             </div>
